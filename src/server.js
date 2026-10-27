@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
 
   if (req.method === 'GET' && (url.pathname === '/health' || url.pathname === '/api/health')) {
     res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-    res.end(JSON.stringify({ name: 'StrikerZ', status: 'ok', version: '0.2.0', game: 'browser-prototype' }));
+    res.end(JSON.stringify({ name: 'StrikerZ', status: 'ok', version: '0.3.0', game: 'browser-prototype' }));
     return;
   }
 
