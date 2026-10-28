@@ -46,7 +46,60 @@ body{background:#3c2419;background-image:radial-gradient(ellipse at 50% 12%,#a97
 @keyframes playPulse{0%,100%{box-shadow:inset 0 0 0 2px #d7ffe7,0 4px 0 #286c4b,0 0 9px #80d6b133}50%{box-shadow:inset 0 0 0 2px #d7ffe7,0 4px 0 #286c4b,0 0 19px #80d6b177}}
 @keyframes giftBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
-.bottom-dock{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(470px,100%);z-index:20;padding:0 10px max(8px,env(safe-area-inset-bottom));background:linear-gradient(180deg,#f7f0df 0%,#ead9bd 30%,#795039 30%,#4b2c20 100%);box-shadow:0 -7px 22px #32190f30;border-top:1px solid #c6a16d}.bottom-dock .section-label{margin:7px 2px 6px}.bottom-dock .chest-row{padding:6px;gap:5px}.bottom-dock .chest{min-height:58px}.bottom-dock .chest span{font-size:21px}.bottom-dock .bottom-nav{margin:7px -10px -8px}.shell{padding-bottom:230px}#gameView:not([hidden])~.bottom-dock{display:none}@media(max-height:650px){.bottom-dock .chest{min-height:43px}.bottom-dock .chest span{font-size:18px}.bottom-dock .section-label{margin:4px 2px}.bottom-dock .chest-row{padding:4px}.shell{padding-bottom:195px}}</style></head><body><main class="shell">
+.bottom-dock{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(470px,100%);z-index:20;padding:0 10px max(8px,env(safe-area-inset-bottom));background:linear-gradient(180deg,#f7f0df 0%,#ead9bd 30%,#795039 30%,#4b2c20 100%);box-shadow:0 -7px 22px #32190f30;border-top:1px solid #c6a16d}.bottom-dock .section-label{margin:7px 2px 6px}.bottom-dock .chest-row{padding:6px;gap:5px}.bottom-dock .chest{min-height:58px}.bottom-dock .chest span{font-size:21px}.bottom-dock .bottom-nav{margin:7px -10px -8px}.shell{padding-bottom:230px}#gameView:not([hidden])~.bottom-dock{display:none}@media(max-height:650px){.bottom-dock .chest{min-height:43px}.bottom-dock .chest span{font-size:18px}.bottom-dock .section-label{margin:4px 2px}.bottom-dock .chest-row{padding:4px}.shell{padding-bottom:195px}}
+/* STRIKERZ modern mobile-game refresh */
+:root{--bg:#f6f0e4;--panel:#fffaf0;--text:#2b211a;--muted:#806f60;--walnut:#533523;--mint:#75d8b1;--gold:#f0bf58}
+body{background:radial-gradient(ellipse at 50% -10%,#a9784c 0,#543322 48%,#201711 100%);letter-spacing:.1px}
+.shell{background:linear-gradient(180deg,#fbf5e9 0%,#f0e3cb 100%);box-shadow:0 0 60px #120a06aa}
+.top{padding:15px 5px 13px;border-bottom:1px solid #d9c4a3}
+.logo{border-radius:14px;width:46px;height:46px;background:linear-gradient(145deg,#2d2119,#6c472e);border:1px solid #d9b878;box-shadow:0 5px 14px #442b1c25,inset 0 0 0 1px #a47b4f}
+.brand h1{font-size:21px;letter-spacing:2.5px}
+.tag{font-size:9px;letter-spacing:1.5px;text-transform:uppercase}
+.pill{border-radius:10px;padding:8px 10px;background:#efe2ca;border-color:#d3b88c;letter-spacing:1px;line-height:1.45}
+.currency-row{padding:13px 0 4px}
+.currency{min-width:90px;border:1px solid #d5bd95;border-radius:14px;background:#fffaf0;box-shadow:0 3px 10px #6c4b2b0c;padding:6px 9px}
+.currency .plus{background:#2d7659;color:#fff;border:0;font-weight:700}
+.welcome{padding:12px 4px 4px}
+.welcome .eyebrow{font-size:9px;letter-spacing:2.4px;color:#92724d}
+.welcome h2{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:34px;font-weight:950;letter-spacing:4px;margin:7px 0 4px;color:#39271c;text-shadow:none}
+.welcome p{font-size:12px;letter-spacing:.3px;color:#806a55}
+.home-board-scene{margin:6px auto 18px;width:min(100%,330px)}
+.scene-caption{font-size:9px;letter-spacing:3px;color:#9b764e;font-weight:800}
+.mode-frame{max-width:100%;border:1px solid #e0c9a5;border-radius:22px;padding:15px 13px 12px;background:linear-gradient(150deg,#fffaf0,#f0e0c3);box-shadow:0 10px 24px #68472b12,inset 0 1px #fff;margin-bottom:20px}
+.mode-title{text-align:left;font-size:10px;letter-spacing:2px;margin:2px 4px 12px;color:#8d6a43;display:flex;align-items:center;gap:9px}
+.mode-title:after{content:"";height:1px;background:#e0c9a5;flex:1}
+.mode-button{min-height:66px;margin:8px 0;border:1px solid #e0c7a0;border-radius:16px;background:#fffaf1;box-shadow:0 3px 0 #e5d1b1,0 5px 12px #5c3a2010;color:#34251a;transition:transform .18s,box-shadow .18s,border-color .18s}
+.mode-button .mode-copy{padding:11px 12px;gap:4px}
+.mode-button strong{font-size:14px;font-weight:850;letter-spacing:.1px}
+.mode-button small{font-size:10px;line-height:1.35;color:#86715d}
+.mode-button .mode-emoji{display:grid;place-items:center;min-width:54px;width:54px;height:54px;margin-right:5px;padding:0;border:0;border-radius:13px;background:#f2e4ca;color:#69472c;font-size:0}
+.mode-button .mode-emoji svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.mode-button.play{background:linear-gradient(105deg,#244f3d,#2e7054);color:#fffaf0;border:1px solid #356c51;box-shadow:0 4px 0 #173b2b,0 8px 18px #1f5b4026}
+.mode-button.play small{color:#d2eadc}
+.mode-button.play .mode-emoji{background:#3d8063;color:#f6d58b}
+.mode-button.friends .mode-emoji{background:#f5e4bd}
+.mode-button:disabled{opacity:1;cursor:default;background:#f7f0e4;color:#6f5a46;border-color:#e5d5bb;box-shadow:0 2px 0 #e7d8c0}
+.mode-button:disabled small{color:#9b8875}
+.mode-button:disabled .mode-emoji{background:#eee3d0;color:#9c7e59}
+.mode-button:not(:disabled):hover{transform:translateY(-2px);box-shadow:0 5px 0 #e5d1b1,0 10px 18px #5c3a2015}
+.mode-button.play:not(:disabled):hover{box-shadow:0 5px 0 #173b2b,0 12px 22px #1f5b4030}
+.mode-button.play{animation:none}
+.mode-button:nth-of-type(n){animation:none}
+.bottom-dock{background:linear-gradient(180deg,#f6eddd 0%,#f0e2c8 27%,#33241b 27%,#211811 100%);border-top:1px solid #c6a16d;box-shadow:0 -8px 25px #38201218}
+.bottom-dock .section-label{font-size:10px;letter-spacing:1.7px;color:#69442c;margin:8px 3px 7px}
+.bottom-dock .section-label small{font-size:9px;letter-spacing:0;text-transform:none}
+.bottom-dock .chest-row{border:1px solid #d9c19b;background:#fff8eb;border-radius:15px;box-shadow:none;padding:6px;gap:6px}
+.bottom-dock .chest{min-height:54px;border:1px solid #e7d7bd;border-radius:11px;background:#f4ead8;color:#927b61;font-size:8px;gap:3px}
+.bottom-dock .chest span{font-size:19px;filter:none}
+.bottom-nav{background:transparent;border:0;margin:7px -10px -8px;padding:5px 7px 3px;gap:5px}
+.nav-item{border:1px solid transparent;background:transparent;color:#c9b7a0;border-radius:12px;padding:6px 2px;font-size:9px;gap:4px;transition:background .2s,color .2s}
+.nav-item span:first-child{font-size:0;display:grid;place-items:center;width:24px;height:24px}
+.nav-item span:first-child svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.nav-item .nav-label{font-size:8px;line-height:1.1;white-space:normal}
+.nav-item.active{background:#f1d08b;color:#38251a;border-color:#f7dfa9;box-shadow:0 3px 10px #00000012}
+.footer{letter-spacing:1.4px;font-size:8px;color:#a28a6c}
+@media(max-width:360px){.mode-button strong{font-size:13px}.mode-button small{font-size:9px}.mode-button .mode-emoji{min-width:47px;width:47px;height:47px}.welcome h2{font-size:30px}}
+</style></head><body><main class="shell">
 <header class="top"><div class="brand"><div class="logo">S</div><div><h1>STRIKERZ</h1><div class="tag">AIM · STRIKE · CONQUER</div></div></div><div class="pill">GAMEPLAY<br>UPDATE 0.3.0</div></header>
 <section id="homeView">
 <div class="currency-row" aria-label="Player currencies"><div class="currency"><span class="gem">💎</span><span>20</span><span class="plus">+</span></div><div class="currency"><span class="coin">🪙</span><span>5 500</span><span class="plus">+</span></div></div>
@@ -56,15 +109,15 @@ body{background:#3c2419;background-image:radial-gradient(ellipse at 50% 12%,#a97
 <div class="scene-caption">AIM · STRIKE · CONQUER</div>
 </div>
 <div class="mode-frame"><div class="mode-title">CHOOSE YOUR GAME</div>
-<button class="mode-button play" type="button" data-launch-game><span class="mode-copy"><strong>Quick Play</strong><small>Jump straight into a classic carrom match</small></span><span class="mode-emoji">⚡</span></button>
-<button class="mode-button" type="button" data-launch-game><span class="mode-copy"><strong>Practice Mode</strong><small>Sharpen your aim and master your shots</small></span><span class="mode-emoji">🎯</span></button>
-<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Play vs Computer</strong><small>Single-player AI match · Coming soon</small></span><span class="mode-emoji">🤖</span></button>
-<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Online Multiplayer</strong><small>Play against online players · Coming soon</small></span><span class="mode-emoji">🌐</span></button>
-<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Leaderboard</strong><small>Top scores and player rankings · Coming soon</small></span><span class="mode-emoji">🏆</span></button>
+<button class="mode-button play" type="button" data-launch-game><span class="mode-copy"><strong>Quick Play</strong><small>Jump straight into a classic carrom match</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 13h6l-1 9 11-13h-6l-1-7z"/></svg></span></button>
+<button class="mode-button" type="button" data-launch-game><span class="mode-copy"><strong>Practice Mode</strong><small>Sharpen your aim and master your shots</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span></button>
+<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Play vs Computer</strong><small>Single-player AI match · Coming soon</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9 16h6"/></svg></span></button>
+<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Online Multiplayer</strong><small>Play against online players · Coming soon</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span></button>
+<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Leaderboard</strong><small>Top scores and player rankings · Coming soon</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg></span></button>
 
 </div>
 <div class="bottom-dock"><div class="section-label">DAILY REWARDS <small>More ways to play</small></div><div class="chest-row"><div class="chest"><span>🎁</span>Free chest</div><div class="chest"><span>🔒</span>Chest slot</div><div class="chest"><span>🔒</span>Chest slot</div><div class="chest"><span>🔒</span>Chest slot</div></div>
-<nav class="bottom-nav" aria-label="Main navigation"><button class="nav-item active" type="button" data-nav="home"><span>🏠</span>Home</button><button class="nav-item" type="button" data-nav="friends"><span>👥</span><span class="nav-label">Play with Friends</span></button><button class="nav-item" type="button" data-nav="rewards"><span>🎁</span>Rewards</button><button class="nav-item" type="button" data-nav="profile"><span>👤</span>Profile</button></nav></div>
+<nav class="bottom-nav" aria-label="Main navigation"><button class="nav-item active" type="button" data-nav="home"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span>Home</button><button class="nav-item" type="button" data-nav="friends"><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2z"/><path d="M16 5a3 3 0 0 1 0 6M18 14a5 5 0 0 1 3 4v2"/></svg></span><span class="nav-label">Play with Friends</span></button><button class="nav-item" type="button" data-nav="rewards"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="18" height="12" rx="2"/><path d="M2 6h20v4H2zM12 6v15M12 6H8a2 2 0 1 1 2-2c0 1 2 2 2 2zM12 6h4a2 2 0 1 0-2-2c0 1-2 2-2 2z"/></svg></span>Rewards</button><button class="nav-item" type="button" data-nav="profile"><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2z"/></svg></span>Profile</button></nav></div>
 </section>
 <section id="gameView" hidden><div class="game-toolbar"><div><div class="eyebrow">QUICK PLAY · PRACTICE</div><h2>Carrom Board</h2><p class="muted">Pull the striker back, then release to shoot.</p></div><button id="backHome" class="secondary" type="button">← Home</button></div><div class="layout"><section class="board-panel"><div class="board-wrap"><canvas id="board" aria-label="Carrom board. Drag striker backwards and release to shoot." role="img"></canvas></div><p class="muted">YOUR TURN · <span id="remaining">19 coins left</span></p></section></div></section>
 <div class="footer">STRIKERZ · GAMEPLAY UPDATE 0.3.0</div>
