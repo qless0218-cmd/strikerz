@@ -134,6 +134,46 @@ html,body{color:var(--text);background:#031713;background-image:radial-gradient(
 .bottom-nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(470px,100%);margin:0;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:linear-gradient(180deg,#082b24f5,#031512fa);border-top:1px solid #b49a4b;box-shadow:0 -7px 24px #0008;backdrop-filter:blur(12px);z-index:50}
 @media(min-width:600px){.bottom-nav{width:470px}}
 
+/* Home layout tuned to the supplied StrikerZ mobile UI reference. */
+.currency-row{display:flex;justify-content:flex-start;gap:8px;padding:10px 2px 8px}
+.currency.currency-action{appearance:none;flex:0 1 auto;min-width:0;padding:5px 8px;background:linear-gradient(110deg,#052a24,#031712);border:1px solid #2d705a;box-shadow:inset 0 0 0 1px #0008,0 2px 7px #0003;color:#f4edcf}
+.currency.currency-action .gem{color:#6ed9ff;text-shadow:none}
+.currency.currency-action .coin{color:#ffcb69;text-shadow:none}
+.currency.currency-action .plus{background:#f4c85d;color:#18372d;border:1px solid #ffe69a;width:18px;height:18px}
+.notification-button{margin-left:auto;width:32px;height:32px;flex:0 0 32px;border:0;background:transparent;color:#f3d47a;font-size:23px}
+.player-strip{display:flex;align-items:center;gap:10px;margin:0 2px 12px;padding:7px 8px;border:1px solid #235947;border-radius:14px;background:linear-gradient(110deg,#05241e,#071913);color:#f6f0d9}
+.player-avatar{display:grid;place-items:center;width:42px;height:42px;flex:0 0 42px;border-radius:50%;border:2px solid #caa64e;background:linear-gradient(145deg,#9b7048,#164638);font-size:24px}
+.player-meta{display:flex;flex:1;min-width:0;flex-direction:column;gap:2px}
+.player-meta strong{font-size:13px}.player-meta span,.player-meta small{font-size:9px;color:#a8cabc}
+.xp-track{height:4px;width:100%;max-width:110px;border-radius:9px;background:#26473a;overflow:hidden}.xp-track i{display:block;width:42%;height:100%;border-radius:9px;background:linear-gradient(90deg,#b9e58a,#f0d36b)}
+.tier-badge{display:flex;align-items:center;gap:5px;padding:6px 7px;border:1px solid #795b32;border-radius:10px;background:#142c23}
+.tier-badge>span{font-size:22px;color:#e6b958}.tier-badge div{display:flex;flex-direction:column;gap:2px}.tier-badge strong{font-size:10px;color:#f3d47a}.tier-badge small{font-size:9px;color:#a8cabc}
+.promo-banner{position:relative;display:flex;align-items:center;justify-content:space-between;overflow:hidden;min-height:91px;margin:0 2px 13px;padding:12px;border:1px solid #997c3e;border-radius:15px;background:radial-gradient(ellipse at 80% 40%,#28654b 0,#0b3026 43%,#041b16 100%);box-shadow:inset 0 0 0 1px #c2a35433,0 4px 12px #0003;color:#f4edcf}
+.promo-copy{display:flex;flex-direction:column;gap:4px;position:relative;z-index:2}.promo-copy small{font-size:8px;letter-spacing:1px;color:#c7d8b7}.promo-copy strong{font-family:Georgia,serif;font-size:21px;color:#f3d36d;text-shadow:0 2px #704c23}.promo-copy span{font-size:9px;color:#f4edcf}
+.promo-mini-board{position:relative;width:112px;height:65px;flex:0 0 112px;transform:rotate(-10deg);border:5px solid #a86f3c;border-radius:7px;background:linear-gradient(135deg,#f1d4a0,#bd824c);box-shadow:inset 0 0 0 2px #6b4025,0 4px 8px #0005}
+.promo-mini-board:before{content:"";position:absolute;inset:8px;border:1px solid #9e6639;background:#e8c997}
+.promo-mini-board i,.promo-mini-board b{position:absolute;z-index:2;width:11px;height:11px;border-radius:50%;background:radial-gradient(circle at 30% 25%,#fff7df,#b5a58b);border:2px solid #fff0c9;box-shadow:0 2px 3px #50301c55}.promo-mini-board i:nth-child(1){left:30px;top:15px}.promo-mini-board i:nth-child(2){left:53px;top:29px;background:radial-gradient(circle at 30% 25%,#6c746f,#101a18)}.promo-mini-board i:nth-child(3){left:68px;top:12px;background:radial-gradient(circle at 30% 25%,#ff9b7d,#a52f25)}.promo-mini-board i:nth-child(4){left:42px;top:39px}.promo-mini-board b{left:54px;top:12px;background:radial-gradient(circle at 30% 25%,#fff0a4,#d9a532)}
+#homeView>.mode-frame{margin-top:0}
+#homeView .mode-title{text-align:left;font-size:11px;letter-spacing:.7px;color:#f4edcf;margin:2px 2px 8px}
+#homeView .mode-frame{border:0;border-radius:0;padding:0 2px 12px;background:transparent;box-shadow:none;max-width:none}
+#homeView .mode-button{background:linear-gradient(110deg,#092d25,#071c18);border:1px solid #28634f;box-shadow:inset 0 0 0 1px #0005,0 3px 7px #0002;color:#f5f0dc;min-height:62px;border-radius:14px}
+#homeView .mode-button .mode-copy{padding:9px 10px}
+#homeView .mode-button strong{font-size:13px;color:#f7f0d8}
+#homeView .mode-button small{font-size:9px;color:#a8cabc}
+#homeView .mode-button .mode-emoji{display:grid;place-items:center;min-width:54px;width:54px;align-self:stretch;padding:6px;background:linear-gradient(145deg,#0e4736,#08251e);border-left:1px solid #2a614c;color:#f4ce65}
+#homeView .mode-button .mode-emoji svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+#homeView .mode-button.play{background:linear-gradient(110deg,#0d6648,#06402f);border-color:#15b783;box-shadow:inset 0 0 0 1px #67e5b133,0 0 10px #10a87522}
+#homeView .mode-button:disabled{opacity:.86}
+#homeView .mode-button:nth-of-type(4),#homeView .mode-button:nth-of-type(5){width:calc(50% - 5px);display:inline-flex;vertical-align:top;min-height:83px}
+#homeView .mode-button:nth-of-type(4) .mode-emoji,#homeView .mode-button:nth-of-type(5) .mode-emoji{display:none}
+#homeView .mode-button:nth-of-type(4) .mode-copy,#homeView .mode-button:nth-of-type(5) .mode-copy{padding:9px}
+#homeView .mode-button:nth-of-type(6){margin-top:7px}
+#homeView .bottom-dock{background:linear-gradient(180deg,#061e19f7,#061e19f9 42%,#082b24);border-top:1px solid #b49a4b;box-shadow:0 -8px 26px #0009}
+#homeView .bottom-dock .section-label{color:#f2d36e}
+#homeView .bottom-dock .chest-row{border:1px solid #27634d;background:#071f19}
+#homeView .bottom-dock .chest{border-color:#285744;background:#0b2b22;color:#c3d8c7}
+#homeView .bottom-nav{background:transparent;border-top:1px solid #285744}
+@media(max-width:360px){.tier-badge{padding:5px}.promo-mini-board{width:90px;flex-basis:90px}.promo-copy strong{font-size:18px}#homeView .mode-button:nth-of-type(4),#homeView .mode-button:nth-of-type(5){width:calc(50% - 4px)}}
 /* Hide only the rewards portion on secondary screens; keep the bottom navigation dock visible. */
 body.strikerz-non-home .bottom-dock>.section-label,body.strikerz-non-home .bottom-dock>.chest-row{display:none!important}
 body.strikerz-non-home .bottom-dock .bottom-nav{margin-top:0!important}
@@ -148,12 +188,9 @@ body.strikerz-non-home .bottom-dock .bottom-nav{margin-top:0!important}
 </style></head><body><main class="shell">
 <header class="top"><div class="brand"><div class="logo">S</div><div><h1>STRIKERZ</h1><div class="tag">AIM · STRIKE · CONQUER</div></div></div><div class="pill">GAMEPLAY<br>UPDATE 0.3.0</div></header>
 <section id="homeView">
-<div class="currency-row" aria-label="Player currencies"><div class="currency"><span class="gem">💎</span><span>20</span><span class="plus">+</span></div><div class="currency"><span class="coin">🪙</span><span>5 500</span><span class="plus">+</span></div></div>
-<div class="welcome"><div class="eyebrow">WELCOME TO THE TABLE</div><h2>STRIKERZ</h2><p>Line up your shot. Pocket the win.</p></div>
-<div class="home-board-scene" aria-label="Animated carrom board preview">
-<div class="real-board"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span><span class="board-coin black bc1"></span><span class="board-coin white bc2"></span><span class="board-coin red bc3"></span><span class="board-coin black bc4"></span><span class="board-coin white bc5"></span><span class="board-striker"></span><span class="board-glint"></span></div>
-<div class="scene-caption">AIM · STRIKE · CONQUER</div>
-</div>
+<div class="currency-row" aria-label="Player currencies"><button class="currency currency-action" type="button" aria-label="Add diamonds"><span class="gem">💎</span><span>250</span><span class="plus">+</span></button><button class="currency currency-action" type="button" aria-label="Add coins"><span class="coin">🪙</span><span>12,450</span><span class="plus">+</span></button><button class="notification-button" type="button" aria-label="Notifications" title="Notifications">♧</button></div>
+<section class="player-strip" aria-label="Player profile summary"><div class="player-avatar" aria-hidden="true">👨🏻</div><div class="player-meta"><strong>Striker</strong><span>Level 5</span><div class="xp-track"><i></i></div><small>420 / 1000 XP</small></div><div class="tier-badge"><span>♜</span><div><strong>Bronze</strong><small>Tier 3</small></div></div></section>
+<section class="promo-banner"><div class="promo-copy"><small>PLAY. IMPROVE. WIN.</small><strong>StrikerZ</strong><span>Feel the real Carrom action!</span></div><div class="promo-mini-board" aria-hidden="true"><i></i><i></i><i></i><i></i><b></b></div></section>
 <div class="mode-frame"><div class="mode-title">CHOOSE YOUR GAME</div>
 <button class="mode-button play" type="button" data-launch-game><span class="mode-copy"><strong>Quick Play</strong><small>Jump straight into a classic carrom match</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 13h6l-1 9 11-13h-6l-1-7z"/></svg></span></button>
 <button class="mode-button" type="button" data-launch-game><span class="mode-copy"><strong>Practice Mode</strong><small>Sharpen your aim and master your shots</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span></button>
