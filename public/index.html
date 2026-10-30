@@ -186,6 +186,66 @@ body.strikerz-non-home .bottom-dock .bottom-nav{margin-top:0!important}
 .bottom-dock .bottom-nav{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:100%!important;margin:8px 0 0!important;padding:7px 0 0!important;background:transparent!important;border-top:1px solid #285744!important;box-shadow:none!important;backdrop-filter:none!important}
 @media(max-height:650px){.shell{padding-bottom:265px!important}.bottom-dock .chest{min-height:54px!important;padding:4px 1px!important}.bottom-dock .chest span{font-size:21px!important}.bottom-dock .section-label{margin-bottom:5px!important}.bottom-dock .bottom-nav{margin-top:5px!important}}
 
+
+/* Layout reconstruction based on the supplied multi-screen reference. */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Russo+One&display=swap');
+body{font-family:'Rajdhani',system-ui,sans-serif!important;background:#080711!important;background-image:radial-gradient(ellipse at 50% 6%,#49214f 0,transparent 38%),linear-gradient(150deg,#070711,#141023 55%,#080711)!important}
+.shell{width:min(470px,100%)!important;min-height:100vh!important;padding:0 10px 245px!important;background:linear-gradient(180deg,#090b17ed,#0e0c1bed 58%,#080912f5)!important;border:0!important;box-shadow:0 0 60px #000b!important}
+.top{padding:8px 3px 8px!important;border-bottom:0!important;background:linear-gradient(90deg,#0a0b16,#181025,#0a0b16)!important}
+.logo{width:31px!important;height:31px!important;border-radius:50%!important;font-size:18px!important;background:linear-gradient(145deg,#ffe08a,#ff9d38 55%,#8f35bd)!important;border:2px solid #f9ce65!important;color:#1a1024!important}
+.brand h1{font-family:'Russo One',system-ui,sans-serif!important;font-size:18px!important;letter-spacing:1.2px!important;color:#fff1d6!important;text-shadow:0 2px #9a4c28,0 0 12px #ed9a4c55!important}
+.tag{font-size:8px!important;letter-spacing:1.5px!important;color:#f1c9ff!important}
+.pill{font-size:8px!important;padding:5px 7px!important;border-radius:8px!important;line-height:1.25!important;background:#171225!important;color:#ffcf76!important;border:1px solid #a56d45!important}
+.currency-row{padding:5px 2px 7px!important;gap:7px!important}
+.currency.currency-action{min-width:0!important;gap:5px!important;padding:4px 7px!important;border-radius:16px!important;font-family:system-ui,sans-serif!important;font-size:10px!important}
+.currency.currency-action span{font-size:12px!important}
+.currency.currency-action .gem,.currency.currency-action .coin{font-size:15px!important}
+.notification-button{font-size:21px!important}
+.player-strip{margin:0 0 8px!important;padding:6px 8px!important;border-radius:12px!important}
+.player-avatar{width:38px!important;height:38px!important;flex-basis:38px!important;font-size:22px!important}
+.player-meta strong{font-size:12px!important}.player-meta span,.player-meta small{font-size:9px!important}
+.tier-badge{padding:5px 6px!important}.tier-badge>span{font-size:20px!important}
+.promo-banner{min-height:160px!important;margin:0 -10px 10px!important;padding:14px 13px!important;border-radius:0!important;border-left:0!important;border-right:0!important;border-top:1px solid #b9824d!important;border-bottom:1px solid #b9824d!important;background:linear-gradient(180deg,#140d1d66,#0a0b17a8),radial-gradient(ellipse at 78% 38%,#b45a29 0,#573024 25%,#171020 65%,#080b14 100%)!important}
+.promo-banner:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(112deg,transparent 0 25px,#ffce6a08 26px 27px),linear-gradient(0deg,#070811 0,transparent 45%);pointer-events:none}
+.promo-copy{max-width:55%!important;gap:5px!important}
+.promo-copy small{font-size:8px!important;letter-spacing:1.5px!important;color:#ffe0a0!important}
+.promo-copy strong{font-family:'Russo One',system-ui,sans-serif!important;font-size:27px!important;letter-spacing:.3px!important;color:#ffce6b!important;text-shadow:0 2px #7e3827,0 4px #24121c,0 0 16px #ffb44a66!important}
+.promo-copy span{font-size:10px!important;color:#fff0d6!important}
+.promo-mini-board{width:145px!important;height:88px!important;flex-basis:145px!important;border-width:7px!important;border-color:#c47b3c!important;box-shadow:inset 0 0 0 2px #ffdb8b,0 8px 16px #0009!important;transform:rotate(-13deg) translate(7px,5px)!important}
+#homeView>.mode-frame{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important;max-width:none!important;margin:0!important;padding:0 0 12px!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+#homeView .mode-title{grid-column:1/-1!important;margin:3px 2px 4px!important;padding:0 2px!important;font-size:11px!important;letter-spacing:1.4px!important}
+#homeView .mode-title:after{background:linear-gradient(90deg,#9d58a5,#4c2a59)!important}
+#homeView .mode-button{width:100%!important;min-width:0!important;min-height:77px!important;margin:0!important;display:flex!important;gap:4px!important;border:1px solid #755083!important;border-radius:12px!important;background:linear-gradient(135deg,#21182e,#101626 75%,#201329)!important;box-shadow:inset 0 0 0 1px #ffffff08,0 4px 9px #0005!important;color:#fff4e6!important;overflow:hidden!important}
+#homeView .mode-button:first-of-type{grid-column:1/-1!important;min-height:64px!important;background:linear-gradient(100deg,#4a1f60,#20162f 65%,#111727)!important;border-color:#e0a64e!important;box-shadow:inset 0 0 0 1px #ffd77a22,0 0 13px #b54cff1c!important}
+#homeView .mode-button .mode-copy{padding:8px!important;gap:3px!important;min-width:0!important}
+#homeView .mode-button strong{font-family:'Rajdhani',system-ui,sans-serif!important;font-size:13px!important;font-weight:700!important;line-height:1.1!important;color:#fff4e6!important}
+#homeView .mode-button small{font-size:9px!important;line-height:1.2!important;color:#c6bad7!important}
+#homeView .mode-button .mode-emoji{width:40px!important;min-width:40px!important;height:40px!important;flex:0 0 40px!important;margin:0 5px 0 0!important;padding:0!important;display:grid!important;place-items:center!important;border-radius:9px!important;background:linear-gradient(145deg,#3b214b,#151b2e)!important;border:1px solid #674478!important;color:#ffca60!important;font-size:23px!important}
+#homeView .mode-button .mode-emoji svg{width:23px!important;height:23px!important;stroke:#ffcb62!important}
+#homeView .mode-button:first-of-type .mode-emoji{width:52px!important;height:52px!important;flex-basis:52px!important;background:linear-gradient(145deg,#5e2a70,#281b3f)!important;border-color:#c18a4d!important}
+#homeView .mode-button.play{background:linear-gradient(105deg,#48205b,#241a3a 70%,#151728)!important;border-color:#e2a84f!important}
+#homeView .mode-button:disabled{opacity:1!important;background:linear-gradient(135deg,#191a2b,#111522)!important;border-color:#46405f!important}
+#homeView .mode-button:disabled .mode-emoji{background:#1c2031!important;border-color:#45405e!important;color:#c0b6d3!important}
+#homeView .mode-button:nth-of-type(n+2){grid-column:auto!important}
+#homeView .mode-button:nth-of-type(2){grid-column:1/-1!important}
+#homeView .mode-button:nth-of-type(3),#homeView .mode-button:nth-of-type(4),#homeView .mode-button:nth-of-type(5),#homeView .mode-button:nth-of-type(6),#homeView .mode-button:nth-of-type(7){min-height:79px!important}
+#homeView .mode-button:nth-of-type(6) .mode-emoji,#homeView .mode-button:nth-of-type(7) .mode-emoji{font-size:21px!important}
+.bottom-dock{background:linear-gradient(180deg,#0a0c18,#0a0b17 40%,#171027)!important;border-top:1px solid #82549a!important;box-shadow:0 -8px 24px #0009!important}
+.bottom-dock .section-label{color:#ffcf70!important;font-family:'Rajdhani',sans-serif!important}
+.bottom-dock .section-label small{color:#d7b8ec!important}
+.bottom-dock .chest-row{background:#101321!important;border-color:#583b6a!important}
+.bottom-dock .chest{background:linear-gradient(145deg,#21172e,#101725)!important;border-color:#4e3a60!important;color:#d7c9e4!important}
+.bottom-dock .chest:first-child{background:linear-gradient(145deg,#4b245b,#21182e)!important;border-color:#e2a74c!important}
+.bottom-dock .bottom-nav{background:#090b17!important;border-top:1px solid #45304f!important}
+.bottom-nav .nav-item{border:1px solid transparent!important;background:transparent!important;color:#c6bdd5!important}
+.bottom-nav .nav-item.active{background:linear-gradient(145deg,#5a2c6b,#271a3b)!important;border:1px solid #e2a64c!important;color:#ffd06b!important}
+.bottom-nav .nav-item span{color:inherit!important}
+.screen-overlay{font-family:'Rajdhani',system-ui,sans-serif!important;background:radial-gradient(ellipse at 85% 0%,#40204c 0,transparent 40%),linear-gradient(165deg,#090b17,#121023 55%,#080912)!important}
+.screen-head{background:#090b17ed!important;border-bottom:1px solid #583b68!important}
+.screen-card{border-radius:13px!important;background:linear-gradient(145deg,#21172e,#101625 72%,#1d1228)!important;border:1px solid #604073!important}
+.screen-action{background:linear-gradient(110deg,#ffe078,#ff9d38)!important;color:#28132b!important;border:1px solid #ffe5a2!important}
+@media(max-width:370px){.promo-banner{min-height:140px!important}.promo-mini-board{width:115px!important;height:72px!important;flex-basis:115px!important}.promo-copy strong{font-size:23px!important}#homeView .mode-button .mode-emoji{width:34px!important;min-width:34px!important;flex-basis:34px!important}}
+
 /* Reference-inspired premium violet / midnight / molten-gold theme across all app screens. */
 :root{color-scheme:dark;--bg:#080914;--panel:#111326;--text:#f7f3ff;--muted:#aaa5c4;--walnut:#17142a;--mint:#d84cff;--gold:#ffbd4a;--line:#54406f}
 html,body{background:#080914!important;color:#f7f3ff!important}
@@ -259,7 +319,9 @@ body{background:radial-gradient(ellipse at 14% 8%,#371347 0,transparent 34%),rad
 <button class="mode-button" type="button" data-launch-game><span class="mode-copy"><strong>Practice Mode</strong><small>Sharpen your aim and master your shots</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></span></button>
 <button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Play vs Computer</strong><small>Single-player AI match · Coming soon</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9 16h6"/></svg></span></button>
 <button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Online Multiplayer</strong><small>Play against online players · Coming soon</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span></button>
-<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Leaderboard</strong><small>Top scores and player rankings · Coming soon</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg></span></button>
+<button class="mode-button" type="button" data-open-screen="leaderboard"><span class="mode-copy"><strong>Leaderboard</strong><small>Top scores and player rankings</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg></span></button>
+<button class="mode-button" type="button" data-open-screen="friends"><span class="mode-copy"><strong>Play with Friends</strong><small>Challenge your friends · Coming soon</small></span><span class="mode-emoji">♟</span></button>
+<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Customisation</strong><small>Personalise your board · Coming soon</small></span><span class="mode-emoji">✧</span></button>
 
 </div>
 <div class="bottom-dock"><div class="section-label">DAILY REWARDS <small>More ways to play</small></div><div class="chest-row"><div class="chest"><span>🎁</span>Free chest</div><div class="chest"><span>🔒</span>Chest slot</div><div class="chest"><span>🔒</span>Chest slot</div><div class="chest"><span>🔒</span>Chest slot</div></div>
