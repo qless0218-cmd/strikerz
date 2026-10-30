@@ -445,6 +445,14 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opa
 .profile-stats{background:linear-gradient(120deg,#123225,#081b14)!important;border-color:#426544!important}
 .achievement-row span{border-color:#d6b04e!important;background:radial-gradient(circle,#31502c,#0b2117)!important}
 @media(max-width:370px){.promo-copy strong{font-size:23px!important}}
+
+/* Asset-backed scene integration: use the original illustrated forest/carrom artwork in real app surfaces. */
+body{background-image:linear-gradient(180deg,#03100bd9,#020b08ee),url('/assets/forest-carrom-scene.svg')!important;background-size:cover,cover!important;background-position:center,center!important;background-attachment:fixed,fixed!important}
+.shell{background:linear-gradient(180deg,#03140ff2 0%,#061b14eF 45%,#03100cf5 100%)!important}
+.promo-banner{background-image:linear-gradient(90deg,#07140de8 0%,#0a1a10bd 42%,#07140d15 100%),url('/assets/forest-carrom-scene.svg')!important;background-size:cover,cover!important;background-position:center,58% 43%!important}
+.promo-mini-board{background-image:url('/assets/forest-carrom-scene.svg')!important;background-size:cover!important;background-position:67% 56%!important}
+#gameView .board-wrap{background-image:linear-gradient(#00000005,#00000005),url('/assets/forest-carrom-scene.svg')!important;background-size:cover!important;background-position:center 64%!important}
+.screen-overlay{background-image:linear-gradient(180deg,#03140ff0,#071b15f2),url('/assets/forest-carrom-scene.svg')!important;background-size:cover!important;background-position:center!important;background-attachment:fixed!important}
 </style></head><body><main class="shell">
 <header class="top"><div class="brand"><div class="logo">S</div><div><h1>STRIKERZ</h1><div class="tag">AIM · STRIKE · CONQUER</div></div></div><div class="pill">GAMEPLAY<br>UPDATE 0.3.0</div></header>
 <section id="homeView">
