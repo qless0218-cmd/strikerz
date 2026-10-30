@@ -330,6 +330,32 @@ body{background:radial-gradient(ellipse at 14% 8%,#371347 0,transparent 34%),rad
 .profile-menu .setting-row{padding:13px 4px;border-bottom:1px solid #3a304d}.profile-menu .setting-row:last-child{border-bottom:0}
 .screen-overlay .friend-tabs{display:flex;gap:3px}.screen-overlay .friend-tabs button{flex:1;padding:10px 5px;font-size:11px}
 @media(max-width:360px){.reward-days{gap:4px}.reward-day{padding:8px 1px}.reward-treasure{font-size:28px}.profile-stats strong{font-size:15px}}
+
+/* Correct the Home screen hierarchy to match the supplied reference: rewards belong on Rewards, not over Home. */
+.shell{padding-bottom:82px!important;min-height:100vh!important}
+.bottom-dock{position:fixed!important;left:50%!important;right:auto!important;bottom:0!important;transform:translateX(-50%)!important;width:min(470px,100%)!important;padding:0 10px max(5px,env(safe-area-inset-bottom))!important;background:linear-gradient(180deg,#0b0b17f5,#0b0b17 40%,#171027)!important;border-top:1px solid #87559a!important;box-shadow:0 -8px 25px #000a!important;z-index:100!important}
+.bottom-dock>.section-label,.bottom-dock>.chest-row{display:none!important}
+.bottom-dock .bottom-nav{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important;transform:none!important;width:100%!important;margin:0!important;padding:7px 0 0!important;background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important}
+#homeView{padding-bottom:14px!important}
+#homeView .currency-row{margin-top:2px!important}
+#homeView .promo-banner{min-height:132px!important;margin:0 -10px 10px!important;padding:12px 13px!important}
+#homeView>.mode-frame{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:8px!important;margin:0!important;padding:0 0 18px!important}
+#homeView .mode-title{grid-column:1/-1!important}
+#homeView .mode-button{grid-column:auto!important;min-height:84px!important;width:100%!important;min-width:0!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:space-between!important}
+#homeView .mode-button:first-of-type{grid-column:1/-1!important;min-height:76px!important}
+#homeView .mode-button:nth-of-type(2){grid-column:1/-1!important}
+#homeView .mode-button:nth-of-type(3),#homeView .mode-button:nth-of-type(4){min-height:94px!important}
+#homeView .mode-button:nth-of-type(5){grid-column:1/-1!important;min-height:76px!important}
+#homeView .mode-button .mode-copy{flex:1!important;overflow-wrap:anywhere!important}
+#homeView .mode-button .mode-emoji{flex-shrink:0!important}
+body.strikerz-non-home .bottom-dock{display:none!important}
+@media(max-width:360px){
+ .shell{padding-left:9px!important;padding-right:9px!important}
+ #homeView .promo-banner{min-height:118px!important}
+ #homeView .promo-copy strong{font-size:22px!important}
+ #homeView .mode-button{min-height:80px!important}
+ #homeView .mode-button:first-of-type,#homeView .mode-button:nth-of-type(5){min-height:70px!important}
+}
 </style></head><body><main class="shell">
 <header class="top"><div class="brand"><div class="logo">S</div><div><h1>STRIKERZ</h1><div class="tag">AIM · STRIKE · CONQUER</div></div></div><div class="pill">GAMEPLAY<br>UPDATE 0.3.0</div></header>
 <section id="homeView">
@@ -342,8 +368,6 @@ body{background:radial-gradient(ellipse at 14% 8%,#371347 0,transparent 34%),rad
 <button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Play vs Computer</strong><small>Single-player AI match · Coming soon</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M12 3v4M9 12h.01M15 12h.01M9 16h6"/></svg></span></button>
 <button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Online Multiplayer</strong><small>Play against online players · Coming soon</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span></button>
 <button class="mode-button" type="button" data-open-screen="leaderboard"><span class="mode-copy"><strong>Leaderboard</strong><small>Top scores and player rankings</small></span><span class="mode-emoji"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0zM7 6H4v2a4 4 0 0 0 4 4M17 6h3v2a4 4 0 0 1-4 4"/></svg></span></button>
-<button class="mode-button" type="button" data-open-screen="friends"><span class="mode-copy"><strong>Play with Friends</strong><small>Challenge your friends · Coming soon</small></span><span class="mode-emoji">♟</span></button>
-<button class="mode-button" type="button" disabled><span class="mode-copy"><strong>Customisation</strong><small>Personalise your board · Coming soon</small></span><span class="mode-emoji">✧</span></button>
 
 </div>
 <div class="bottom-dock"><div class="section-label">DAILY REWARDS <small>More ways to play</small></div><div class="chest-row"><div class="chest"><span>🎁</span>Free chest</div><div class="chest"><span>🔒</span>Chest slot</div><div class="chest"><span>🔒</span>Chest slot</div><div class="chest"><span>🔒</span>Chest slot</div></div>
