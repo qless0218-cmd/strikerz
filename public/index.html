@@ -356,6 +356,29 @@ body.strikerz-non-home .bottom-dock{display:none!important}
  #homeView .mode-button{min-height:80px!important}
  #homeView .mode-button:first-of-type,#homeView .mode-button:nth-of-type(5){min-height:70px!important}
 }
+
+/* Hard layout corrections: keep Home compact, show all five reference cards, and never render the reward tray on Home. */
+#homeView>.bottom-dock{display:none!important}
+#homeView .mode-frame{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important;padding-bottom:18px!important}
+#homeView .mode-title{grid-column:1/-1!important}
+#homeView .mode-frame>.mode-button{grid-column:auto!important;min-width:0!important;min-height:84px!important;width:100%!important;margin:0!important}
+#homeView .mode-frame>.mode-button:nth-of-type(2){grid-column:1/-1!important;min-height:74px!important}
+#homeView .mode-frame>.mode-button:nth-of-type(3),#homeView .mode-frame>.mode-button:nth-of-type(4){grid-column:auto!important;min-height:88px!important}
+#homeView .mode-frame>.mode-button:nth-of-type(5){grid-column:1/-1!important;min-height:74px!important}
+#homeView .mode-frame>.mode-button .mode-copy{min-width:0!important;flex:1 1 auto!important}
+#homeView .mode-frame>.mode-button .mode-copy strong{font-size:13px!important}
+#homeView .mode-frame>.mode-button .mode-copy small{font-size:9px!important;line-height:1.2!important}
+#homeView .mode-frame>.mode-button .mode-emoji{width:40px!important;height:40px!important;min-width:40px!important;flex:0 0 40px!important}
+#homeView .promo-banner{min-height:126px!important;height:126px!important}
+#homeView .promo-mini-board{width:125px!important;height:76px!important;flex-basis:125px!important}
+#homeView .player-strip{min-height:60px!important}
+.bottom-dock{height:58px!important;min-height:58px!important}
+.bottom-dock>.section-label,.bottom-dock>.chest-row{display:none!important}
+.bottom-dock .bottom-nav{height:100%!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;align-items:center!important;padding:3px 0 0!important;margin:0!important}
+.bottom-dock .nav-item{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:2px!important;min-width:0!important;padding:4px 1px!important;font-size:9px!important}
+.bottom-dock .nav-item svg{width:18px!important;height:18px!important}
+.shell{padding-bottom:72px!important}
+@media(max-height:780px){#homeView .promo-banner{min-height:112px!important;height:112px!important}#homeView .promo-mini-board{width:110px!important;height:68px!important;flex-basis:110px!important}#homeView .mode-frame>.mode-button{min-height:70px!important}#homeView .mode-frame>.mode-button:nth-of-type(2),#homeView .mode-frame>.mode-button:nth-of-type(5){min-height:64px!important}}
 </style></head><body><main class="shell">
 <header class="top"><div class="brand"><div class="logo">S</div><div><h1>STRIKERZ</h1><div class="tag">AIM · STRIKE · CONQUER</div></div></div><div class="pill">GAMEPLAY<br>UPDATE 0.3.0</div></header>
 <section id="homeView">
