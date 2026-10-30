@@ -537,7 +537,21 @@ body{background:radial-gradient(ellipse at 50% 25%,#38204d 0%,#121426 43%,#05071
 @media(min-width:400px){.shell{width:min(390px,100%)!important}.promo-banner{min-height:300px!important}}
 @media(max-width:350px){.shell{padding-left:7px!important;padding-right:7px!important}.currency{padding:5px 6px!important;gap:4px!important}.currency-row{gap:4px!important}.mode-button .mode-emoji{min-width:39px!important}.nav-label{font-size:7px!important}}
 </style>
-</head><body><main class="shell">
+<style id="reference-card-order">
+/* Card order and proportions from the supplied HOME SCREEN reference */
+#homeView .mode-frame{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+#homeView .mode-frame .mode-button:nth-of-type(1){order:1;grid-column:1/-1!important}
+#homeView .mode-frame .mode-button:nth-of-type(2){order:2;grid-column:1!important}
+#homeView .mode-frame .mode-button:nth-of-type(3){order:3;grid-column:2!important}
+#homeView .mode-frame .mode-button:nth-of-type(4){order:4;grid-column:1!important}
+#homeView .mode-frame .mode-button:nth-of-type(5){order:7;grid-column:1!important}
+#homeView .mode-frame .mode-button:nth-of-type(6){order:5;grid-column:2!important}
+#homeView .mode-frame .mode-button:nth-of-type(7){order:6;grid-column:2!important}
+#homeView .mode-frame .mode-button:nth-of-type(5){grid-row:auto}
+#homeView .mode-frame .mode-button:nth-of-type(1){min-height:64px!important}
+#homeView .mode-frame .mode-button:nth-of-type(2),#homeView .mode-frame .mode-button:nth-of-type(3),#homeView .mode-frame .mode-button:nth-of-type(4),#homeView .mode-frame .mode-button:nth-of-type(5),#homeView .mode-frame .mode-button:nth-of-type(6),#homeView .mode-frame .mode-button:nth-of-type(7){min-height:74px!important}
+#homeView .promo-banner{background-image:linear-gradient(180deg,#110d22a0 0%,#1a103022 38%,#090b18a8 100%),url('/assets/forest-carrom-scene.svg')!important;background-position:center center!important;background-size:cover!important}
+</style></head><body><main class="shell">
 <header class="top"><div class="brand"><div class="logo">S</div><div><h1>STRIKERZ</h1><div class="tag">AIM · STRIKE · CONQUER</div></div></div><div class="pill">GAMEPLAY<br>UPDATE 0.3.0</div></header>
 <section id="homeView">
 <div class="currency-row" aria-label="Player currencies"><button class="currency currency-action" type="button" aria-label="Add diamonds"><span class="gem">💎</span><span>250</span><span class="plus">+</span></button><button class="currency currency-action" type="button" aria-label="Add coins"><span class="coin">🪙</span><span>12,450</span><span class="plus">+</span></button><button class="notification-button" type="button" aria-label="Notifications" title="Notifications">♧</button></div>
