@@ -127,6 +127,12 @@ html,body{color:var(--text);background:#031713;background-image:radial-gradient(
 .screen-action{width:100%;border:1px solid #43e5b0;border-radius:24px;padding:13px;background:linear-gradient(100deg,#00a875,#075d43);color:white;font-weight:800;margin:6px 0}
 .rank-row,.setting-row{display:flex;align-items:center;justify-content:space-between;padding:13px 2px;border-bottom:1px solid #174737}.rank-row:last-child,.setting-row:last-child{border:0}.rank-no{color:#f1d16b;font-weight:900;width:30px}.rank-name{flex:1}.rank-score{color:#a9d8c5;font-weight:800}.friend-tabs{display:flex;gap:8px}.friend-tabs button{flex:1;background:#08251e;color:#a9c9bd;border:1px solid #275b47;border-radius:12px;padding:10px}.friend-tabs button.active{background:#0a7955;color:white;border-color:#41e6b0}
 @media(min-width:600px){.screen-overlay{left:50%;right:auto;width:min(470px,100%);transform:translateX(-50%);padding:22px 18px}}
+
+/* Keep only the main navigation pinned; rewards remain part of the scrolling page. */
+.shell{padding-bottom:calc(82px + env(safe-area-inset-bottom))}
+.bottom-dock{position:static}
+.bottom-nav{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(470px,100%);margin:0;padding:9px 10px calc(9px + env(safe-area-inset-bottom));background:linear-gradient(180deg,#082b24f5,#031512fa);border-top:1px solid #b49a4b;box-shadow:0 -7px 24px #0008;backdrop-filter:blur(12px);z-index:50}
+@media(min-width:600px){.bottom-nav{width:470px}}
 </style></head><body><main class="shell">
 <header class="top"><div class="brand"><div class="logo">S</div><div><h1>STRIKERZ</h1><div class="tag">AIM · STRIKE · CONQUER</div></div></div><div class="pill">GAMEPLAY<br>UPDATE 0.3.0</div></header>
 <section id="homeView">
