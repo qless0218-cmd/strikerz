@@ -604,4 +604,5 @@ function showGame(){document.querySelector('#homeView').hidden=true;document.que
  document.querySelectorAll('.mode-button').forEach(b=>{if(b.disabled&&/Leaderboard/i.test(b.textContent)){b.disabled=false;b.querySelector('small').textContent='Explore sample player rankings';b.addEventListener('click',()=>openScreen('leaderboard'))}});
  const header=document.querySelector('.top');const settings=document.createElement('button');settings.className='screen-back';settings.type='button';settings.textContent='⚙';settings.setAttribute('aria-label','Settings');settings.style.padding='6px 10px';settings.onclick=()=>openScreen('settings');header.appendChild(settings);
 })();
-</script></body></html>
+</script><!-- StrikerZ consolidated redeploy: includes home layout, forest emerald-gold theme, and forest carrom artwork. -->
+</body></html>
